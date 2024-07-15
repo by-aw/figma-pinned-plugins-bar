@@ -1,9 +1,11 @@
 /// <reference types="vite-plugin-svgr/client" />
 
 import { useState } from "react";
+
 import Actions from "./actions/Actions";
 import { FigmaBar } from "./FigmaBar";
 import FigmaWindow from "./FigmaWindow";
+import Footer from "./Footer";
 
 export default function FigmaApp() {
   const [actionsShown, setActionsShown] = useState(false);
@@ -25,6 +27,7 @@ export default function FigmaApp() {
           setWindow={setWindow}
         />
       </section>
+      <Footer />
     </main>
   );
 }
